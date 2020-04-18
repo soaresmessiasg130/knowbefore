@@ -20,4 +20,4 @@ flutter:
   uses-material-design: true
 
   assets:
-    - images/header.png
+    - assets/images/logo-login.png
