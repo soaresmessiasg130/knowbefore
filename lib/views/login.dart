@@ -52,15 +52,15 @@ class LoginPage extends StatelessWidget {
                 left: 0,
                 right: 0,
                 child: Container(
-                  height: 40,
+                  height: MediaQuery.of(context).size.height*.45,
                   decoration: BoxDecoration(
                     color: Colors.transparent,
                     boxShadow: [
                       BoxShadow(
                         color: appColors.primaryDark(1),
                         offset: const Offset(0, 0),
-                        spreadRadius: 10,
-                        blurRadius: 50
+                        spreadRadius: -10,
+                        blurRadius: 30
                       ),
                     ],
                   ),
@@ -180,11 +180,8 @@ class LoginPage extends StatelessWidget {
                                   ),
                                 ),
                                 onPressed: (){},
-                                color: appColors.secondary(1),
+                                color: appColors.primary(1),
                                 shape: RoundedRectangleBorder(
-                                  side: BorderSide(
-                                    color: appColors.secondaryDark(1),
-                                  ),
                                   borderRadius: BorderRadius.all(
                                       Radius.circular(50)
                                   ),

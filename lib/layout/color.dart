@@ -6,8 +6,8 @@ import 'package:flutter/material.dart';
 
 class AppColors{
 
-  Color primary([double opacity = 1]) => Colors.blueGrey[700].withOpacity(opacity);
-  Color secondary([double opacity = 1]) => Colors.orangeAccent[700].withOpacity(opacity);
+  Color primary([double opacity = 1]) => Colors.blueGrey[300].withOpacity(opacity);
+  Color secondary([double opacity = 1]) => Colors.teal[400].withOpacity(opacity);
 
   Color primaryLight([double opacity = 1]) => Color(0xff718792).withOpacity(opacity);
   Color secondaryLight([double opacity = 1]) => Color(0xffff9e40).withOpacity(opacity);
