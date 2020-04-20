@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: {
         '/': (context) => LoginPage(),
-        '/main': (context) => MainDashboard(),
+        '/dashboard': (context) => MainDashboard(),
       },
     );
   }
