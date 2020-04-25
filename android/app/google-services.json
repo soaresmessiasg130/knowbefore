@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "325018205993",
+    "firebase_url": "https://know-before.firebaseio.com",
+    "project_id": "know-before",
+    "storage_bucket": "know-before.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325018205993:android:6e7aec7c56733ace21c138",
+        "android_client_info": {
+          "package_name": "com.messzsoarz.knowbeforeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "325018205993-f552rr5k48gsuqjnofr96vgb7m8c6506.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.messzsoarz.knowbeforeapp",
+            "certificate_hash": "80c9607f8bd11025ed07ddf8f2fe5482489548a5"
+          }
+        },
+        {
+          "client_id": "325018205993-opa2mfbun208mgcv4obba52icjtcbrvl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXog3XhaG7GqoCnE0bmFWMh9zRLDTrzm4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "325018205993-opa2mfbun208mgcv4obba52icjtcbrvl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

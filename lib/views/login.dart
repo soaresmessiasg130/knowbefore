@@ -172,7 +172,7 @@ class LoginPage extends StatelessWidget {
                               width: MediaQuery.of(context).size.width*.65,
                               height: MediaQuery.of(context).size.height*.1,
                               child: RaisedButton(
-                                child: Text(
+                                child: Text( 
                                   'Login',
                                   style: TextStyle(
                                       color: appColors.textOnSecondary(1),
