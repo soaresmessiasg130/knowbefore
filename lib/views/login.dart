@@ -13,15 +13,15 @@ class LoginPage extends StatelessWidget {
           Container(
             child: Column(
               children: <Widget>[
-                SizedBox(height: MediaQuery.of(context).size.height*0.05,),
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * 0.05,
+                ),
                 ClipRRect(
                   child: Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(150),
-                      border: Border.all(
-                          color: appColors.secondary(1),
-                          width: 10
-                      ),
+                      border:
+                          Border.all(color: appColors.secondary(1), width: 10),
                     ),
                     child: Image.asset('assets/images/logo-login.png'),
                   ),
@@ -41,7 +41,9 @@ class LoginPage extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(height: MediaQuery.of(context).size.height*0.05,),
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * 0.05,
+                ),
               ],
             ),
           ),
@@ -52,27 +54,24 @@ class LoginPage extends StatelessWidget {
                 left: 0,
                 right: 0,
                 child: Container(
-                  height: MediaQuery.of(context).size.height*.45,
+                  height: MediaQuery.of(context).size.height * .45,
                   decoration: BoxDecoration(
                     color: Colors.transparent,
                     boxShadow: [
                       BoxShadow(
-                        color: appColors.primaryDark(1),
-                        offset: const Offset(0, 0),
-                        spreadRadius: -10,
-                        blurRadius: 30
-                      ),
+                          color: appColors.primaryDark(1),
+                          offset: const Offset(0, 0),
+                          spreadRadius: -10,
+                          blurRadius: 30),
                     ],
                   ),
                 ),
               ),
               Container(
-                height: MediaQuery.of(context).size.height*.45,
+                height: MediaQuery.of(context).size.height * .45,
                 decoration: BoxDecoration(
                   color: appColors.primaryLight(1),
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(50)
-                  ),
+                  borderRadius: BorderRadius.all(Radius.circular(50)),
                 ),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -86,24 +85,21 @@ class LoginPage extends StatelessWidget {
                             TextFormField(
                               cursorColor: appColors.textOnPrimary(1),
                               style: TextStyle(
-                                fontSize: 20,
-                                color: appColors.textOnPrimary(1)
-                              ),
+                                  fontSize: 20,
+                                  color: appColors.textOnPrimary(1)),
                               initialValue: 'Username or E-mail',
                               decoration: InputDecoration(
                                 border: OutlineInputBorder(
-                                  borderRadius: BorderRadius.all(
-                                    Radius.circular(50)
-                                  ),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(50)),
                                 ),
                               ),
                             ),
                             TextFormField(
                               cursorColor: appColors.textOnPrimary(1),
                               style: TextStyle(
-                                fontSize: 20,
-                                color: appColors.textOnPrimary(1)
-                              ),
+                                  fontSize: 20,
+                                  color: appColors.textOnPrimary(1)),
                               obscureText: true,
                               decoration: InputDecoration(
                                 border: OutlineInputBorder(
@@ -119,9 +115,8 @@ class LoginPage extends StatelessWidget {
                                 Text(
                                   'Forgot your password?',
                                   style: TextStyle(
-                                    color: appColors.textOnPrimary(1),
-                                    fontSize: 16
-                                  ),
+                                      color: appColors.textOnPrimary(1),
+                                      fontSize: 16),
                                 ),
                               ],
                             ),
@@ -131,60 +126,58 @@ class LoginPage extends StatelessWidget {
                     ),
                     Container(
                       decoration: BoxDecoration(
-                        color: appColors.primaryLight(1),
-                        borderRadius: BorderRadius.all(Radius.circular(50))
-                      ),
+                          color: appColors.primaryLight(1),
+                          borderRadius: BorderRadius.all(Radius.circular(50))),
                       child: Stack(
                         children: <Widget>[
                           SizedBox(
-                            height: MediaQuery.of(context).size.height*.1,
+                            height: MediaQuery.of(context).size.height * .1,
                             child: RaisedButton(
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 children: <Widget>[
-                                  SizedBox(width: MediaQuery.of(context).size.width*.07,),
+                                  SizedBox(
+                                    width:
+                                        MediaQuery.of(context).size.width * .07,
+                                  ),
                                   Text(
                                     'Sign Up',
                                     style: TextStyle(
                                         color: appColors.textOnSecondary(1),
-                                        fontSize: 22
-                                    ),
+                                        fontSize: 22),
                                   ),
                                 ],
                               ),
                               color: appColors.primaryLight(1),
-                              onPressed: (){},
+                              onPressed: () {},
                               shape: RoundedRectangleBorder(
-                                side: BorderSide(
-                                    style: BorderStyle.none
-                                ),
-                                borderRadius: BorderRadius.all(
-                                    Radius.circular(50)
-                                ),
+                                side: BorderSide(style: BorderStyle.none),
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(50)),
                               ),
                             ),
                           ),
                           Padding(
                             padding: EdgeInsets.fromLTRB(
-                              MediaQuery.of(context).size.width*.35,0,0,0
-                            ),
+                                MediaQuery.of(context).size.width * .35,
+                                0,
+                                0,
+                                0),
                             child: SizedBox(
-                              width: MediaQuery.of(context).size.width*.65,
-                              height: MediaQuery.of(context).size.height*.1,
+                              width: MediaQuery.of(context).size.width * .65,
+                              height: MediaQuery.of(context).size.height * .1,
                               child: RaisedButton(
-                                child: Text( 
+                                child: Text(
                                   'Login',
                                   style: TextStyle(
                                       color: appColors.textOnSecondary(1),
-                                      fontSize: 28
-                                  ),
+                                      fontSize: 28),
                                 ),
-                                onPressed: (){},
+                                onPressed: () {},
                                 color: appColors.primary(1),
                                 shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.all(
-                                      Radius.circular(50)
-                                  ),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(50)),
                                 ),
                               ),
                             ),
